@@ -44,6 +44,16 @@ def simsudoku_checker(grid.txt):
           checklist[row//3][column//3] == True
   
   #step4 - check if all values are true - if so print success
-  
+  for i in range(n):
+    for j in range(n):
+      if checklist[i][j]:
+        correct = False
+
+  #results
+  if correct == False:
+    print(False)
+  else:
+    print(True)
+    
   #close file
   grid.close()
